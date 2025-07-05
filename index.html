@@ -20,7 +20,7 @@
     header {
       background: #2563eb;
       color: white;
-      padding: 60px 20px;
+      padding: 60px 20px 30px;
       text-align: center;
       position: relative;
     }
@@ -37,22 +37,25 @@
     }
     header p {
       font-size: 18px;
-      margin: 10px 0;
+      margin: 10px 0 20px;
       animation: fadeInUp 1.5s ease-in-out;
     }
     nav {
-      text-align: center;
-      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
     nav a {
-      margin: 0 10px;
+      padding: 10px 15px;
       text-decoration: none;
       color: white;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 6px;
     }
     nav a:hover {
-      color: #dbeafe;
+      background: #1e40af;
     }
     section {
       padding: 40px 20px;
@@ -89,6 +92,19 @@
     a:hover {
       text-decoration: underline;
     }
+    .download-cv {
+      background: white;
+      color: #2563eb;
+      border: 2px solid white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .download-cv:hover {
+      background: #dbeafe;
+      color: #1e40af;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -108,23 +124,12 @@
       header p {
         font-size: 16px;
       }
+      nav {
+        flex-direction: column;
+        gap: 8px;
+      }
     }
-  .download-cv {
-      background: white;
-      color: #2563eb;
-      border: 2px solid white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-right: 15px;
-      transition: background 0.3s, color 0.3s;
-    }
-    .download-cv:hover {
-      background: #dbeafe;
-      color: #1e40af;
-    }
-</style>
-
+  </style>
 </head>
 <body>
   <header>
@@ -132,12 +137,12 @@
     <h1>Deni Alfian Khaulany</h1>
     <p>Mobile Developer | Flutter & Android</p>
     <nav>
-  <a href="cv/CV_DeniAlfian.pdf" download class="download-cv">Unduh CV</a>
-  <a href="#about">Tentang</a>
-  <a href="#projects">Proyek</a>
-  <a href="#skills">Keahlian</a>
-  <a href="#contact">Kontak</a>
-</nav>
+      <a href="cv/CV_DeniAlfian.pdf" download class="download-cv">Unduh CV</a>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Proyek</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#contact">Kontak</a>
+    </nav>
   </header>
 
   <section id="about">
