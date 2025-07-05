@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deni Alfian Khaulany | Mobile Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f4ff, #ffffff);
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    header p {
+      font-size: 18px;
+      margin: 10px 0;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #dbeafe;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: #2563eb;
+    }
+    .project {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e3a8a;
+      color: white;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #2563eb;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+      header p {
+        font-size: 16px;
+      }
+    }
+  .download-cv {
+      background: white;
+      color: #2563eb;
+      border: 2px solid white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 15px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .download-cv:hover {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+$1
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/100" alt="Foto Profil" />
+    <h1>Deni Alfian Khaulany</h1>
+    <p>Mobile Developer | Flutter & Android</p>
+    <nav>
+      <a href="#" download class="download-cv">Unduh CV</a>
+      $1
+      <a href="#projects">Proyek</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah mobile developer dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi Android menggunakan Flutter dan Java. Saya terbiasa mengintegrasikan backend (Firebase, REST API), memperhatikan UI/UX, serta mengoptimalkan performa aplikasi.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Keahlian</h2>
+    <ul>
+      <li>Flutter (Dart)</li>
+      <li>Java, Kotlin (Android)</li>
+      <li>Firebase: Auth, Firestore, Storage</li>
+      <li>REST API</li>
+      <li>Git & GitHub</li>
+      <li>UI/UX Design (Figma)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Proyek Unggulan</h2>
+    <div class="project">
+      <h3>📱 BookSwapper App</h3>
+      <p>Aplikasi barter buku fisik dengan fitur Firebase Auth, chat, upload gambar, dan lokasi pengguna.</p>
+      <p><strong>Stack:</strong> Flutter, Firestore, Google Maps API</p>
+      <p><a href="#">GitHub</a></p>
+    </div>
+    <div class="project">
+      <h3>💰 Personal Finance Tracker</h3>
+      <p>Aplikasi pencatatan keuangan pribadi dengan laporan bulanan dan export ke Excel.</p>
+      <p><strong>Stack:</strong> Flutter, Firestore, Java</p>
+      <p><a href="#">Play Store</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: denialfian@gmail.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/denialfian</a></p>
+    <p>GitHub: <a href="#">github.com/denialfian</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Deni Alfian Khaulany. All rights reserved.
+  </footer>
+</body>
+</html>
